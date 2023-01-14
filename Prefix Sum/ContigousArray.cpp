@@ -13,7 +13,7 @@ int maxLengthArray(vector<int> &nums)
     int maxLen = 0;
     for(int i = 0;i<n;i++)
     {
-        sum += nums[i];
+        sum += nums[i]==0?-1:1;
         if(sum == 0)
         {
             maxLen = i+1;
